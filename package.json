@@ -1,0 +1,23 @@
+{
+  "name": "tijapass-v7-ai-accounting",
+  "version": "7.0.0",
+  "private": true,
+  "description": "TijaPass V7 bilingual MSME accounting with rules-assisted customer capture, TFL exception review and auditable journal corrections",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node tests/accounting.test.mjs && node tests/v6-controls.test.mjs && node tests/v6-source.test.mjs && node tests/v7-super-accountant.test.mjs && node tests/v7-source.test.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
